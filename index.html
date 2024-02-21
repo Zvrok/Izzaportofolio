@@ -1,43 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Insert your about me information here.</p>
-    </section>
-    <section id="portfolio">
-        <h2>My Work</h2>
-        <ul>
-            <li>
-                <a href="link-to-project-1">
-                    <img src="image-for-project-1.jpg" alt="Project 1">
-                    <h3>Project 1</h3>
-                </a>
-            </li>
-            <li>
-                <a href="link-to-project-2">
-                    <img src="image-for-project-2.jpg" alt="Project 2">
-                    <h3>Project 2</h3>
-                </a>
-            </li>
-            <li>
-                <a href="link-to-project-3">
-                    <img src="image-for-project-3.jpg" alt="Project 3">
-                    <h3>Project 3</h3>
-                </a>
-            </li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Insert your contact information here.</p>
-    </section>
+    <main>
+        <section id="about">
+            <h1>My Name - Portfolio Website</h1>
+            <p>Welcome to my portfolio website!</p>
+            <p>I am a web developer with experience in HTML, CSS, JavaScript, and other web technologies. I specialize in building responsive and user-friendly websites for individuals and businesses.</p>
+            <p>I am passionate about creating clean and modern designs that are both visually appealing and functional. I am always looking for new challenges and opportunities to expand my skills and knowledge.</p>
+        </section>
+        <section id="portfolio">
+            <h2>My Work</h2>
+            <ul>
+                <li>
+                    <a href="project-1.html">
+                        <img src="project-1.jpg" alt="Project 1">
+                        <h3>Project 1</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="project-2.html">
+                        <img src="project-2.jpg" alt="Project 2">
+                        <h3>Project 2</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="project-3.html">
+                        <img src="project-3.jpg" alt="Project 3">
+                        <h3>Project 3</h3>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Name - Portfolio Website</p>
+    </footer>
 </body>
 </html>
