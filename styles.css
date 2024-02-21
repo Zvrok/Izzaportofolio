@@ -10,41 +10,24 @@ header {
     padding: 1rem;
 }
 
-header h1 {
+header nav ul {
+    list-style-type: none;
     margin: 0;
+    padding: 0;
 }
 
-#about, #portfolio, #contact {
+header nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
     padding: 2rem;
 }
 
-#about h2, #portfolio h2, #contact h2 {
-    margin: 0 0 1rem 0;
-}
-
-#portfolio ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#portfolio li {
-    flex-basis: calc(33.333% - 2rem);
-    margin: 1rem;
-}
-
-#portfolio a {
-    text-decoration: none;
-    color: black;
-}
-
-#portfolio img {
-    width: 100%;
-    height: auto;
-}
-
-#contact p {
-    margin: 0;
-}
+main section {
